@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container input[type="submit"] {
+            margin-top: 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 80%;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: white;
+            color: blue;
+            border: 1px solid blue;
+        }
+        .form-container input[type="submit"]:active {
+            background-color: darkblue;
+            color: white;
+        }
+        .names {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="primerser" method="post">
+            <label for="username">Login</label>
+            <input type="text" id="username" name="username" />
+            
+            <label for="passwd">Password</label>
+            <input type="password" id="passwd" name="passwd" />
+            
+            <input type="submit" value="Enviar" />
+        </form>
+        <div class="names">
+            <p><b>Integrantes</b></p>
+            <p>Oscar Diaz, Alvarez Tole y Mario Mendoza</p>
+        </div>
+    </div>
+</body>
+</html>
